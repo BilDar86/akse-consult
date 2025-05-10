@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Création d’entreprise - AKSE consult</title>
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Google Fonts: Inter -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+    }
+  </style>
+</head>
+<body class="bg-white text-gray-900">
+
+  <!-- Header / Navigation -->
+  <header class="border-b border-gray-200">
+    <nav class="container mx-auto flex flex-wrap items-center justify-between p-4">
+      <a href="index.html" class="text-xl font-bold text-blue-700">AKSE consult</a>
+      <ul class="hidden md:flex space-x-8 text-sm font-semibold text-gray-700">
+        <li><a href="creation-entreprise.html" class="text-blue-700 border-b-2 border-blue-700 pb-1">Création d’entreprise</a></li>
+        <li><a href="expertise-comptable.html" class="hover:text-blue-700">Expertise comptable</a></li>
+        <li><a href="domiciliation.html" class="hover:text-blue-700">Domiciliation</a></li>
+        <li><a href="depot-capital.html" class="hover:text-blue-700">Dépôt de capital</a></li>
+      </ul>
+      <!-- Mobile menu button -->
+      <button id="menu-btn" class="md:hidden text-gray-700 focus:outline-none" aria-label="Toggle menu">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round">
+          <line x1="3" y1="6" x2="21" y2="6" />
+          <line x1="3" y1="12" x2="21" y2="12" />
+          <line x1="3" y1="18" x2="21" y2="18" />
+        </svg>
+      </button>
+    </nav>
+    <!-- Mobile menu -->
+    <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-gray-200">
+      <ul class="flex flex-col p-4 space-y-2 text-gray-700 font-semibold">
+        <li><a href="creation-entreprise.html" class="block text-blue-700 border-b-2 border-blue-700 pb-1">Création d’entreprise</a></li>
+        <li><a href="expertise-comptable.html" class="block hover:text-blue-700">Expertise comptable</a></li>
+        <li><a href="domiciliation.html" class="block hover:text-blue-700">Domiciliation</a></li>
+        <li><a href="depot-capital.html" class="block hover:text-blue-700">Dépôt de capital</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="container mx-auto px-4 py-16 text-center md:text-left">
+    <h1 class="text-4xl md:text-5xl font-extrabold text-gray-900 mb-4">Création d’entreprise</h1>
+    <p class="text-gray-600 text-lg max-w-3xl mx-auto md:mx-0">
+      Créez votre entreprise simplement et rapidement avec AKSE consult. Choisissez le statut juridique adapté à votre projet et bénéficiez d’un accompagnement complet.
+    </p>
+  </section>
+
+  <!-- Company Types Section -->
+  <section class="container mx-auto px-4 py-8">
+    <h2 class="text-2xl font-semibold text-blue-700 mb-6">Types de sociétés</h2>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+      <div class="bg-white p-6 rounded-lg shadow-md">
+        <h3 class="text-xl font-semibold mb-2">SAS</h3>
+        <p class="text-gray-700 text-sm">Société par Actions Simplifiée, idéale pour les projets flexibles avec plusieurs associés.</p>
+        <a href="#" class="text-blue-700 hover:underline mt-2 inline-block">Créer ma SAS</a>
+      </div>
+      <div class="bg-white p-6 rounded-lg shadow-md">
+        <h3 class="text-xl font-semibold mb-2">SARL</h3>
+        <p class="text-gray-700 text-sm">Société à Responsabilité Limitée, adaptée aux petites et moyennes entreprises familiales ou partenariales.</p>
+        <a href="#" class="text-blue-700 hover:underline mt-2 inline-block">Créer ma SARL</a>
+      </div>
+      <div class="bg-white p-6 rounded-lg shadow-md">
+        <h3 class="text-xl font-semibold mb-2">Auto-entreprise</h3>
+        <p class="text-gray-700 text-sm">Statut simplifié pour les entrepreneurs individuels avec des démarches allégées.</p>
+        <a href="#" class="text-blue-700 hover:underline mt-2 inline-block">Créer mon auto-entreprise</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Steps Section -->
+  <section class="container mx-auto px-4 py-8 bg-gray-50 rounded-lg max-w-5xl">
+    <h2 class="text-2xl font-semibold text-blue-700 mb-6 text-center">Les étapes pour créer votre entreprise</h2>
+    <ol class="list-decimal list-inside space-y-4 text-gray-700 max-w-3xl mx-auto">
+      <li>Complétez un formulaire simple et rapide.</li>
+      <li>Signez vos documents en ligne en toute sécurité.</li>
+      <li>Votre dossier est finalisé par nos experts.</li>
+      <li>Recevez votre Kbis et démarrez votre activité.</li>
+    </ol>
+  </section>
+
+  <!-- Benefits Section -->
+  <section class="container mx-auto px-4 py-8">
+    <h2 class="text-2xl font-semibold text-blue-700 mb-6 text-center">Pourquoi choisir AKSE consult ?</h2>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
+      <div>
+        <h3 class="font-semibold mb-2">Accompagnement personnalisé</h3>
+        <p class="text-gray-700 text-sm">Un expert vous guide à chaque étape de la création de votre société.</p>
+      </div>
+      <div>
+        <h3 class="font-semibold mb-2">Dépôt rapide</h3>
+        <p class="text-gray-700 text-sm">Votre dossier est déposé en 24h pour un démarrage rapide.</p>
+      </div>
+      <div>
+        <h3 class="font-semibold mb-2">Garantie anti-rejet</h3>
+        <p class="text-gray-700 text-sm">Nous assurons la gestion des échanges avec l’administration pour éviter tout rejet.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-white border-t border-gray-200 py-8 mt-16">
+    <div class="container mx-auto px-4 text-center text-gray-600 text-sm">
+      &copy; 2024 AKSE consult. Tous droits réservés.
+    </div>
+  </footer>
+
+  <script>
+    // Mobile menu toggle
+    const menuBtn = document.getElementById('menu-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
+    menuBtn.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    });
+  </script>
+
+</body>
+</html>
