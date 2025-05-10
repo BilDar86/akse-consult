@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Dépôt de capital - AKSE consult</title>
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Google Fonts: Inter -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+    }
+  </style>
+</head>
+<body class="bg-white text-gray-900">
+
+  <!-- Header / Navigation -->
+  <header class="border-b border-gray-200">
+    <nav class="container mx-auto flex flex-wrap items-center justify-between p-4">
+      <a href="index.html" class="text-xl font-bold text-blue-700">AKSE consult</a>
+      <ul class="hidden md:flex space-x-8 text-sm font-semibold text-gray-700">
+        <li><a href="creation-entreprise.html" class="hover:text-blue-700">Création d’entreprise</a></li>
+        <li><a href="expertise-comptable.html" class="hover:text-blue-700">Expertise comptable</a></li>
+        <li><a href="domiciliation.html" class="hover:text-blue-700">Domiciliation</a></li>
+        <li><a href="depot-capital.html" class="text-blue-700 border-b-2 border-blue-700 pb-1">Dépôt de capital</a></li>
+      </ul>
+      <!-- Mobile menu button -->
+      <button id="menu-btn" class="md:hidden text-gray-700 focus:outline-none" aria-label="Toggle menu">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round">
+          <line x1="3" y1="6" x2="21" y2="6" />
+          <line x1="3" y1="12" x2="21" y2="12" />
+          <line x1="3" y1="18" x2="21" y2="18" />
+        </svg>
+      </button>
+    </nav>
+    <!-- Mobile menu -->
+    <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-gray-200">
+      <ul class="flex flex-col p-4 space-y-2 text-gray-700 font-semibold">
+        <li><a href="creation-entreprise.html" class="block hover:text-blue-700">Création d’entreprise</a></li>
+        <li><a href="expertise-comptable.html" class="block hover:text-blue-700">Expertise comptable</a></li>
+        <li><a href="domiciliation.html" class="block hover:text-blue-700">Domiciliation</a></li>
+        <li><a href="depot-capital.html" class="block text-blue-700 border-b-2 border-blue-700 pb-1">Dépôt de capital</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="container mx-auto px-4 py-16 text-center md:text-left">
+    <h1 class="text-4xl md:text-5xl font-extrabold text-gray-900 mb-4">Dépôt de capital</h1>
+    <p class="text-gray-600 text-lg max-w-3xl mx-auto md:mx-0">
+      Votre dépôt de capital et compte professionnel AKSE consult Pro disponibles en quelques clics.
+    </p>
+  </section>
+
+  <!-- Features Section -->
+  <section class="container mx-auto px-4 py-8 bg-gray-50 rounded-lg max-w-5xl">
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8 text-gray-700">
+      <div>
+        <h3 class="font-semibold mb-2">Votre attestation de dépôt de capital (obligatoire)</h3>
+        <p>Délivrée en seulement 12h pour vous permettre de démarrer rapidement.</p>
+      </div>
+      <div>
+        <h3 class="font-semibold mb-2">Immatriculation de votre entreprise plus rapide</h3>
+        <p>Réalisée en moyenne 7 jours plus tôt grâce à notre service efficace.</p>
+      </div>
+      <div>
+        <h3 class="font-semibold mb-2">Compte professionnel AKSE consult Pro</h3>
+        <p>Avec Mastercard Corporate, paiements jusqu’à 20 000€ par mois.</p>
+      </div>
+      <div>
+        <h3 class="font-semibold mb-2">Application mobile AKSE consult Pro incluse</h3>
+        <p>Gérez vos finances facilement depuis votre smartphone.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-white border-t border-gray-200 py-8 mt-16">
+    <div class="container mx-auto px-4 text-center text-gray-600 text-sm">
+      &copy; 2024 AKSE consult. Tous droits réservés.
+    </div>
+  </footer>
+
+  <script>
+    // Mobile menu toggle
+    const menuBtn = document.getElementById('menu-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
+    menuBtn.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    });
+  </script>
+
+</body>
+</html>
