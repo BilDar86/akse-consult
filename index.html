@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>AKSE consult - Lancez votre société, on s'occupe de tout !</title>
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Google Fonts: Inter -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+    }
+  </style>
+</head>
+<body class="bg-white text-gray-900">
+
+  <!-- Header / Navigation -->
+  <header class="border-b border-gray-200">
+    <nav class="container mx-auto flex flex-wrap items-center justify-between p-4">
+      <a href="#" class="text-xl font-bold text-blue-700">AKSE consult</a>
+      <ul class="hidden md:flex space-x-8 text-sm font-semibold text-gray-700">
+        <li><a href="#" class="hover:text-blue-700">Création d’entreprise</a></li>
+        <li><a href="#" class="hover:text-blue-700">Expertise comptable</a></li>
+        <li><a href="#" class="hover:text-blue-700">Domiciliation</a></li>
+        <li><a href="#" class="hover:text-blue-700">Dépôt de capital</a></li>
+      </ul>
+      <!-- Mobile menu button -->
+      <button id="menu-btn" class="md:hidden text-gray-700 focus:outline-none" aria-label="Toggle menu">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round">
+          <line x1="3" y1="6" x2="21" y2="6" />
+          <line x1="3" y1="12" x2="21" y2="12" />
+          <line x1="3" y1="18" x2="21" y2="18" />
+        </svg>
+      </button>
+    </nav>
+    <!-- Mobile menu -->
+    <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-gray-200">
+      <ul class="flex flex-col p-4 space-y-2 text-gray-700 font-semibold">
+        <li><a href="#" class="block hover:text-blue-700">Création d’entreprise</a></li>
+        <li><a href="#" class="block hover:text-blue-700">Expertise comptable</a></li>
+        <li><a href="#" class="block hover:text-blue-700">Domiciliation</a></li>
+        <li><a href="#" class="block hover:text-blue-700">Dépôt de capital</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="container mx-auto px-4 py-16 flex flex-col-reverse md:flex-row items-center md:items-start gap-12">
+    <div class="md:w-1/2 text-center md:text-left">
+      <h1 class="text-4xl md:text-5xl font-extrabold text-gray-900 mb-4">
+        Lancez votre société, simplement.
+      </h1>
+      <p class="text-gray-600 mb-8 text-lg">
+        Créez votre entreprise rapidement en étant bien accompagné. Gérez votre juridique, comptabilité et finances dans la même application.
+      </p>
+      <div class="flex justify-center md:justify-start gap-4">
+        <a href="#" class="bg-blue-700 text-white px-6 py-3 rounded-md font-semibold hover:bg-blue-800 transition">
+          Créer mon entreprise
+        </a>
+        <a href="#" class="border border-blue-700 text-blue-700 px-6 py-3 rounded-md font-semibold hover:bg-blue-100 transition">
+          Découvrir nos offres
+        </a>
+      </div>
+      <p class="mt-8 text-gray-500 text-sm">Plus de 300 000 entrepreneurs ont été accompagnés par AKSE consult</p>
+    </div>
+    <div class="md:w-1/2">
+      <img src="https://www.legalplace.fr/wp-content/uploads/2024/11/Illustrations-header@2x-2.png" alt="Illustration AKSE consult" class="w-full max-w-md mx-auto" />
+    </div>
+  </section>
+
+  <!-- Services Highlights Section -->
+  <section class="bg-gray-50 py-16">
+    <div class="container mx-auto px-4 grid grid-cols-1 md:grid-cols-4 gap-8 text-center">
+      <div class="bg-white p-6 rounded-lg shadow-md">
+        <h3 class="text-xl font-semibold mb-2 text-blue-700">Création d’entreprise</h3>
+        <p class="text-gray-600 text-sm">SAS, SARL, Auto-entreprise ...</p>
+      </div>
+      <div class="bg-white p-6 rounded-lg shadow-md">
+        <h3 class="text-xl font-semibold mb-2 text-blue-700">Expertise comptable</h3>
+        <p class="text-gray-600 text-sm">Conseil illimité et logiciel comptable</p>
+      </div>
+      <div class="bg-white p-6 rounded-lg shadow-md">
+        <h3 class="text-xl font-semibold mb-2 text-blue-700">Domiciliation</h3>
+        <p class="text-gray-600 text-sm">Scan et tri automatique, services pro</p>
+      </div>
+      <div class="bg-white p-6 rounded-lg shadow-md">
+        <h3 class="text-xl font-semibold mb-2 text-blue-700">Dépôt de capital</h3>
+        <p class="text-gray-600 text-sm">Votre dépôt de capital et compte professionnel disponibles en quelques clics</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials Section -->
+  <section class="container mx-auto px-4 py-16">
+    <h2 class="text-3xl font-extrabold text-center mb-12">Nos clients parlent de nous</h2>
+    <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+      <div class="bg-white p-6 rounded-lg shadow-md text-center">
+        <img src="https://www.legalplace.fr/wp-content/uploads/2023/08/Ellipse-153-1.png" alt="Sara Fellaouine" class="w-20 h-20 rounded-full mx-auto mb-4 object-cover" />
+        <p class="font-semibold mb-1">Sara Fellaouine</p>
+        <p class="text-sm text-gray-600 mb-4">GM France Urban</p>
+        <p class="text-gray-700 text-sm italic">« J’avais besoin de créer mon entreprise rapidement. J’ai été accompagné de bout en bout et le service client était très sympathique. Je recommande à tous ceux qui ne veulent pas se prendre la tête avec le juridique »</p>
+      </div>
+      <div class="bg-white p-6 rounded-lg shadow-md text-center">
+        <img src="https://www.legalplace.fr/wp-content/uploads/2023/08/Ellipse-153-1-1.png" alt="Ahmad Chamseddine" class="w-20 h-20 rounded-full mx-auto mb-4 object-cover" />
+        <p class="font-semibold mb-1">Ahmad Chamseddine</p>
+        <p class="text-sm text-gray-600 mb-4">Co-fondateur de ThalerTech</p>
+        <p class="text-gray-700 text-sm italic">« Simple et efficace, plus besoin de dépenser une fortune pour créer sa société. J’ai déjà recommandé AKSE consult à plusieurs amis »</p>
+      </div>
+      <div class="bg-white p-6 rounded-lg shadow-md text-center">
+        <img src="https://www.legalplace.fr/wp-content/uploads/2023/08/Ellipse-153.png" alt="Adrien Mennillo" class="w-20 h-20 rounded-full mx-auto mb-4 object-cover" />
+        <p class="font-semibold mb-1">Adrien Mennillo</p>
+        <p class="text-sm text-gray-600 mb-4">Fondateur de uTip</p>
+        <p class="text-gray-700 text-sm italic">« J’ai été surpris par la simplicité et rapidité du service. Une fois le formulaire rempli, on fournit les justificatifs et l’équipe s’occupe de tout. Service de qualité, je recommande »</p>
+      </div>
+      <div class="bg-white p-6 rounded-lg shadow-md text-center">
+        <img src="https://www.legalplace.fr/wp-content/uploads/2023/08/Ellipse-153-2.png" alt="Francis Lelong" class="w-20 h-20 rounded-full mx-auto mb-4 object-cover" />
+        <p class="font-semibold mb-1">Francis Lelong</p>
+        <p class="text-sm text-gray-600 mb-4">CEO Alegria.tech</p>
+        <p class="text-gray-700 text-sm italic">« Service de qualité, je recommande »</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Popular Services and Guides Section -->
+  <section class="bg-gray-50 py-16">
+    <div class="container mx-auto px-4 grid grid-cols-1 md:grid-cols-3 gap-12">
+      <div>
+        <h3 class="text-xl font-semibold mb-4 text-blue-700">Nos démarches les plus populaires</h3>
+        <ul class="list-disc list-inside space-y-2 text-gray-700 text-sm">
+          <li><a href="#" class="hover:text-blue-700">Créer son entreprise</a></li>
+          <li><a href="#" class="hover:text-blue-700">Créer une SCI</a></li>
+          <li><a href="#" class="hover:text-blue-700">Créer une SASU</a></li>
+          <li><a href="#" class="hover:text-blue-700">Créer une SAS</a></li>
+          <li><a href="#" class="hover:text-blue-700">Créer une EURL</a></li>
+          <li><a href="#" class="hover:text-blue-700">Créer une SARL</a></li>
+          <li><a href="#" class="hover:text-blue-700">Pacte d’associés</a></li>
+          <li><a href="#" class="hover:text-blue-700">Devenir auto-entrepreneur</a></li>
+          <li><a href="#" class="hover:text-blue-700">Créer une association</a></li>
+          <li><a href="#" class="hover:text-blue-700">Mettre en place un CSE</a></li>
+          <li><a href="#" class="hover:text-blue-700">Transférer son siège social</a></li>
+          <li><a href="#" class="hover:text-blue-700">Changer de dénomination sociale</a></li>
+          <li><a href="#" class="hover:text-blue-700">Registre des Bénéficiaires Effectifs</a></li>
+          <li><a href="#" class="hover:text-blue-700">CGV</a></li>
+          <li><a href="#" class="hover:text-blue-700">CGU</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3 class="text-xl font-semibold mb-4 text-blue-700">Nos contrats les plus demandés</h3>
+        <ul class="list-disc list-inside space-y-2 text-gray-700 text-sm">
+          <li><a href="#" class="hover:text-blue-700">Bail professionnel</a></li>
+          <li><a href="#" class="hover:text-blue-700">Bail commercial</a></li>
+          <li><a href="#" class="hover:text-blue-700">Contrat de location</a></li>
+          <li><a href="#" class="hover:text-blue-700">Contrat de travail</a></li>
+          <li><a href="#" class="hover:text-blue-700">Statuts SASU</a></li>
+          <li><a href="#" class="hover:text-blue-700">Statuts SAS</a></li>
+          <li><a href="#" class="hover:text-blue-700">Statuts SARL</a></li>
+          <li><a href="#" class="hover:text-blue-700">Statuts EURL</a></li>
+          <li><a href="#" class="hover:text-blue-700">Statuts SCI</a></li>
+          <li><a href="#" class="hover:text-blue-700">Pacte d’associés</a></li>
+          <li><a href="#" class="hover:text-blue-700">Statuts association</a></li>
+          <li><a href="#" class="hover:text-blue-700">CGV</a></li>
+          <li><a href="#" class="hover:text-blue-700">CGU</a></li>
+          <li><a href="#" class="hover:text-blue-700">Contrat de cession de marque</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3 class="text-xl font-semibold mb-4 text-blue-700">Nos guides juridiques</h3>
+        <ul class="list-disc list-inside space-y-2 text-gray-700 text-sm">
+          <li><a href="#" class="hover:text-blue-700">La SAS</a></li>
+          <li><a href="#" class="hover:text-blue-700">Créer une SAS</a></li>
+          <li><a href="#" class="hover:text-blue-700">La SASU</a></li>
+          <li><a href="#" class="hover:text-blue-700">Créer une SASU</a></li>
+          <li><a href="#" class="hover:text-blue-700">La SCI</a></li>
+          <li><a href="#" class="hover:text-blue-700">Créer une SCI</a></li>
+          <li><a href="#" class="hover:text-blue-700">La SARL</a></li>
+          <li><a href="#" class="hover:text-blue-700">Créer une SARL</a></li>
+          <li><a href="#" class="hover:text-blue-700">L’auto-entrepreneur</a></li>
+          <li><a href="#" class="hover:text-blue-700">Devenir auto-entrepreneur</a></li>
+          <li><a href="#" class="hover:text-blue-700">Le statut d’auto-entrepreneur</a></li>
+          <li><a href="#" class="hover:text-blue-700">L’association loi 1901</a></li>
+          <li><a href="#" class="hover:text-blue-700">Créer une association</a></li>
+          <li><a href="#" class="hover:text-blue-700">Statuts d’association</a></li>
+          <li><a href="#" class="hover:text-blue-700">Modifier les statuts de son entreprise</a></li>
+          <li><a href="#" class="hover:text-blue-700">Transférer son siège social</a></li>
+          <li><a href="#" class="hover:text-blue-700">Changer de dénomination sociale</a></li>
+          <li><a href="#" class="hover:text-blue-700">Le compromis de vente</a></li>
+          <li><a href="#" class="hover:text-blue-700">Duplicata de carte grise</a></li>
+          <li><a href="#" class="hover:text-blue-700">Demande de certificat d’immatriculation</a></li>
+          <li><a href="#" class="hover:text-blue-700">Le PACS</a></li>
+          <li><a href="#" class="hover:text-blue-700">CGV</a></li>
+          <li><a href="#" class="hover:text-blue-700">Modèle de CGU</a></li>
+          <li><a href="#" class="hover:text-blue-700">Le CSE</a></li>
+          <li><a href="#" class="hover:text-blue-700">Le licenciement</a></li>
+          <li><a href="#" class="hover:text-blue-700">La rupture conventionnelle</a></li>
+          <li><a href="#" class="hover:text-blue-700">L’accord d’intéressement</a></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-white border-t border-gray-200 py-8 mt-16">
+    <div class="container mx-auto px-4 text-center text-gray-600 text-sm">
+      &copy; 2024 AKSE consult. Tous droits réservés.
+    </div>
+  </footer>
+
+  <script>
+    // Mobile menu toggle
+    const menuBtn = document.getElementById('menu-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
+    menuBtn.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    });
+  </script>
+
+</body>
+</html>
